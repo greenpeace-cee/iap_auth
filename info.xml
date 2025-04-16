@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<extension key="iap_auth" type="module">
+  <file>iap_auth</file>
+  <name>Identity-Aware Proxy Authentication</name>
+  <description>Google Cloud Identity-Aware Proxy Authentication for CiviCRM Standalone</description>
+  <license>AGPL-3.0</license>
+  <authors>
+    <author>
+      <name>Patrick Figel</name>
+      <email>pfigel@greenpeace.org</email>
+      <role>Maintainer</role>
+    </author>
+  </authors>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/greenpeace-cee/iap_auth</url>
+    <url desc="Documentation">https://github.com/greenpeace-cee/iap_auth</url>
+    <url desc="Support">https://github.com/greenpeace-cee/iap_auth/issues</url>
+    <url desc="Licensing">https://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2025-03-31</releaseDate>
+  <version>1.0.0-alpha.1</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>5.81</ver>
+  </compatibility>
+  <comments/>
+  <classloader>
+    <psr0 prefix="CRM_" path="."/>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/IapAuth</namespace>
+    <format>25.01.1</format>
+    <angularModule>crmIapAuth</angularModule>
+  </civix>
+  <mixins>
+    <mixin>mgd-php@1.0.0</mixin>
+    <mixin>setting-php@1.0.0</mixin>
+    <mixin>smarty@1.0.3</mixin>
+    <mixin>menu-xml@1.0.0</mixin>
+  </mixins>
+</extension>

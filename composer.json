@@ -1,0 +1,16 @@
+{
+    "name": "greenpeace-cee/iap_auth",
+    "description": "Google Cloud Identity-Aware Proxy Authentication for CiviCRM Standalone",
+    "type": "civicrm-ext",
+    "license": "AGPL-3.0",
+    "authors": [
+        {
+            "name": "Patrick Figel",
+            "email": "pfigel@greenpeace.org"
+        }
+    ],
+    "require": {
+        "google/auth": "^1.46",
+        "kelvinmo/simplejwt": "^0.2"
+    }
+}
